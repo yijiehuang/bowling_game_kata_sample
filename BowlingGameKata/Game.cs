@@ -15,9 +15,9 @@ namespace BowlingGameKata
             for (int i = 0; i < pins.Count-1;i++ )
             {
                 if (pins[i]==10)
-                    score = pins[i] + pins[i + 2] + pins[i + 3];
+                    score += pins[i] + pins[i + 2] + pins[i + 3];
                 else if (pins[i]+pins[i+1]==10&& i%2==0)
-                    score = pins[i] + pins[i + 2];
+                    score += pins[i] + pins[i + 2];
                 else
                     score += pins[i];
             }
